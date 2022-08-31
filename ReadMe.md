@@ -1,10 +1,12 @@
-![510964-Richard-P-Feynman-Quote-What-I-cannot-create-I-do-not-understand](https://user-images.githubusercontent.com/60070427/187035212-5189553a-cbc8-476f-a220-b8a995d5685b.jpg)
+![https://user-images.githubusercontent.com/60070427/187035212-5189553a-cbc8-476f-a220-b8a995d5685b.jpg](https://st1.latestly.com/wp-content/uploads/2020/05/Richard-Feynman-Quote-2.jpg)
+
+---
 
 <div align="center" style="font-size:25px">
 
-## Hi 👋, I'm Elsebaiy Mohammed (\_\_Seba3y\_\_)
+# Hi 👋, I'm Elsebaiy Mohammed (AKA \_\_Seba3y\_\_)
 
-#### Artificial Intelligence Student | Software Developer
+### Artificial Intelligence Student | Software Developer
 </div>
 
 ---
@@ -13,6 +15,7 @@
 [![](https://visitcount.itsvg.in/api?id=ElsebaiyMohamed&icon=9&color=4)](https://visitcount.itsvg.in)
 
 </div>
+
 # 💫 whoami
 <div style="font-size:25px">
 <h2>
@@ -28,7 +31,7 @@
 </div>
 
 # 🌐 Socials
-<div align="center">
+<div >
 
 <a href="https://linkedin.com/in/el-sebaiy-mohammed-611810198" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="el-sebaiy-mohammed-611810198"/></a>
 <a href="https://stackoverflow.com/users/13425950" target="blank"><img align="center" src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="13425950"/></a>
