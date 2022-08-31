@@ -17,7 +17,7 @@
 </div>
 
 # 💫 whoami
-<div style="font-size:25px" line-height: 1.4em>
+<div style="font-size:25px">
 <h2>
 
   * I am a passionate Open Source Developer, who commits code at night and merges it in day. 
@@ -31,12 +31,13 @@
 </div>
 
 # 🌐 Socials
-<div line-height: 1.4em>
+<div align="center">
 
 <a href="https://linkedin.com/in/el-sebaiy-mohammed-611810198" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="el-sebaiy-mohammed-611810198"/></a> 
 <a href="https://stackoverflow.com/users/13425950" target="blank"><img align="center" src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="13425950"/></a> 
 <a href="https://kaggle.com/sebaeymohamed" target="blank"><img align="center" src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="sebaeymohamed" /></a> 
 <a href="https://fb.com/sebaey.255" target="blank"><img align="center" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="sebaey.255"/></a>
+
 <a href="https://www.codechef.com/users/sebaeymohamed4" target="blank"><img align="center" src="https://img.shields.io/badge/Codechef-%23B92B27.svg?&style=for-the-badge&logo=Codechef&logoColor=white" alt="sebaeymohamed4"/></a> 
 <a href="https://www.hackerrank.com/sebaeymohamed43" target="blank"><img align="center" src="https://img.shields.io/badge/-Hackerrank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="sebaeymohamed43" /></a> 
 <a href="https://codeforces.com/profile/elsebaiy" target="blank"><img align="center" src="https://img.shields.io/badge/Codeforces-445f9d?style=for-the-badge&logo=Codeforces&logoColor=white" alt="elsebaiy" /></a> 
