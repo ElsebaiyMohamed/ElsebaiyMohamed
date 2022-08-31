@@ -54,14 +54,23 @@
 
 </div> 
 
+---
+
 # 📊 GitHub Stats:
 
 <div align="center">
+
 <img width = "65%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&show_icons=true&theme=merko&hide_border=false" />
+
 <img width = "65%" src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&show_icons=true&theme=merko&hide_border=false" /><br>
+
 <img width = "65%" src="https://github-readme-streak-stats.herokuapp.com/?user=ElsebaiyMohamed&theme=merko&hide_border=false" /> <br/>
 </div>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=ElsebaiyMohamed&theme=juicyfresh&no-frame=false&no-bg=false&margin-w=4)
 
+# 🏆 GitHub Trophies
+
+<div align="center"> 
+
+![](https://github-profile-trophy.vercel.app/?username=ElsebaiyMohamed&theme=juicyfresh&no-frame=false&no-bg=false&margin-w=6)
+</div>
