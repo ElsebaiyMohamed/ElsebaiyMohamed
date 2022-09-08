@@ -71,6 +71,7 @@
 
 # 🏆 GitHub Trophies
 
+
 <div align="center"> 
 
 ![](https://github-profile-trophy.vercel.app/?username=ElsebaiyMohamed&theme=juicyfresh&no-frame=false&no-bg=false&margin-w=6)
