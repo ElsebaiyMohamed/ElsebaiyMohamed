@@ -61,7 +61,7 @@
 
 <div align="center">
 
-<img width = "65%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&show_icons=true&theme=merko&hide_border=false" />
+<img width = "66%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&show_icons=true&theme=merko&hide_border=false" />
 
 <img width = "65%" src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&show_icons=true&theme=merko&hide_border=false" /><br>
 
