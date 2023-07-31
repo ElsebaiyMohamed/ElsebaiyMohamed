@@ -4,9 +4,9 @@
 
 <div align="center" style="font-size:25px">
 
-# Hi 👋, I'm Elsebaiy Mohammed (AKA \_\_Seba3y\_\_)
+# Hi 👋, I'm Elsebaiy Mohammed (AKA sab3b3)
 
-### Artificial Intelligence Student | Software Developer
+### Machine Learning Engineer | NLP Engineer
 </div>
 
 ---
@@ -16,18 +16,7 @@
 
 </div>
 
-# 💫 whoami
-<div style="font-size:25px">
-<h2>
 
-  * I am a passionate Open Source Developer, who commits code at night and merges it in day. 
-
-  * The only goal of my life is to fulfill my intellectual desire by reading, writing, teaching and making friends. 
-
-  * Interested in learning how things work in depth to form a good picture of them.
-
-  * That is why I find my passion in writing code, learning DSA, OOP, Designs Patterns  Mathematics, Physics, Algorithms and Artificial Intelligence and how to write Readable and Maintainable Code.
-</h2>
 </div>
 
 # 🌐 Socials
