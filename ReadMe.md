@@ -1,7 +1,3 @@
-![https://user-images.githubusercontent.com/60070427/187035212-5189553a-cbc8-476f-a220-b8a995d5685b.jpg](https://st1.latestly.com/wp-content/uploads/2020/05/Richard-Feynman-Quote-2.jpg)
-
----
-
 <h2> Hi 👋, I'm Elsebaiy Mohammed! (aka Sab3wi) <img src="https://media.giphy.com/media/qLytYr0b6Fsjj4MyYm/giphy.gif" width="100" height="50"></h2>
 
 <p><em>Machine Learning Enginner</br>NLP & Speech recognition Engineer</br>Data Scientist</br>Python Developer
