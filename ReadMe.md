@@ -2,7 +2,7 @@
 
 ---
 
-<h2> Hi 👋, I'm Elsebaiy Mohammed! (aka Sab3wi) <img src="https://media.giphy.com/media/qLytYr0b6Fsjj4MyYm/giphy.gif" width="30" height="50"></h2>
+<h2> Hi 👋, I'm Elsebaiy Mohammed! (aka Sab3wi) <img src="https://media.giphy.com/media/qLytYr0b6Fsjj4MyYm/giphy.gif" width="100" height="50"></h2>
 
 <p><em>Machine Learning Enginner</br>NLP & Speech recognition Engineer</br>Data Scientist</br>Python Developer
 
@@ -18,8 +18,8 @@
 
   <!-- https://github.com/anuraghazra/github-readme-stats -->
 
-   <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" height="192px"/></a>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff" height="192px"/></a>
+   <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" height="192px" width="50%"/></a>
+  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff" height="192px" width="50%"/></a>
   <br/>
 
   <!-- https://github.com/ElsebaiyMohamed/github-readme-activity-graph -->
