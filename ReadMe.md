@@ -1,8 +1,17 @@
-<h1> Hi 👋, I'm Elsebaiy Mohammed! (aka Sab3wi) </h1>
+<h1 align="center">> Hi 👋, I'm Elsebaiy Mohammed! (aka Sab3wi) </h1>
+<h3 align="center">A Machine Learning Enginner from Egypt</h3>
 
-<p><em>Machine Learning Enginner</br>NLP & Speech recognition Engineer</br>Data Scientist</br>Python Developer
+## 💬 Ask me about
+- Math (Linear Algebra, Calculus, Probability and statistics)
+- Machine Learning
+- Deep Learning (Pytorch, TensorFlow, Huggingface Transformers)
+- Natural Language Processing (NLP)
+- Speech Recognition systems
+- Side projects (Lazy Link ft. @ElsebaiyMohamed)
+
 
 <a href="https://www.linkedin.com/in/sebaie-mohammed/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="el-sebaiy-mohammed-611810198"/></a> 
+<a href="https://huggingface.co/seba3y" target="blank"><img align="center" src="https://img.shields.io/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="13425950"/></a> 
 <a href="https://stackoverflow.com/users/13425950" target="blank"><img align="center" src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="13425950"/></a> 
 <a href="https://kaggle.com/sebaeymohamed" target="blank"><img align="center" src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="sebaeymohamed" /></a> 
 <a href="https://www.leetcode.com/elsebaey-mohamed" target="blank"><img align="center" src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" alt="elsebaey-mohamed"/></a> 
