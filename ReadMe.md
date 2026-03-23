@@ -9,6 +9,8 @@
 - Speech Recognition systems
 - Side projects (Lazy Link ft. @ElsebaiyMohamed)
 
+## Issues
+[huggingface](https://github.com/huggingface/transformers/issues/28002)
 
 <a href="https://www.linkedin.com/in/sebaie-mohammed/" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="el-sebaiy-mohammed-611810198"/></a> 
 <a href="https://huggingface.co/seba3y" target="blank"><img align="center" src="https://img.shields.io/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="13425950"/></a> 
