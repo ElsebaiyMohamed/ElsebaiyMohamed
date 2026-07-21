@@ -67,11 +67,13 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 <!-- https://github.com/anuraghazra/github-readme-stats -->
 <!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
 
-<div align="center" style="display: flex; justify-content: center; gap: 10px;">
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&cache_seconds=86400" width="360" height="210"/></a>
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F8D56F&ring=F8D866&fire=F8D56F&currStreakNum=F8D866&sideNums=F8D866&currStreakLabel=F8D56F&dateFormat=M%20j%5B,%20Y%5D&cache_seconds=86400" width="360" height="210"/></a>
-  <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&hide=JupyterNotebook,Roff&cache_seconds=86400" width="360" height="210"/></a>
-</div>
+<table>
+<tr>
+<td width="33%"><a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&cache_seconds=86400" width="100%"/></a></td>
+<td width="33%"><a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F8D56F&ring=F8D866&fire=F8D56F&currStreakNum=F8D866&sideNums=F8D866&currStreakLabel=F8D56F&dateFormat=M%20j%5B,%20Y%5D&cache_seconds=86400" width="100%"/></a></td>
+<td width="33%"><a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&hide=JupyterNotebook,Roff&cache_seconds=86400" width="100%"/></a></td>
+</tr>
+</table>
 
 <br/>
 
