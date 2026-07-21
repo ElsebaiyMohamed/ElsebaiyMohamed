@@ -17,7 +17,7 @@
 
 ### 🎯 What I do
 
-I build production speech AI systems for Arabic and its dialects — fine-tuning **Wav2Vec2**, **Whisper**, and **HiFi-GAN** for ASR, TTS, and full speech-to-speech pipelines. Currently job-hunting for challenging roles in **AI/Speech Tech**.
+I build production speech AI systems for Arabic and its dialects — fine-tuning **Wav2Vec2**, **Whisper**, and **HiFi-GAN** for ASR, TTS, and full speech-to-speech pipelines. Currently job-hunting for AI/NLP roles in Egypt or remote positions.
 
 ### 💬 Ask me about
 
@@ -67,17 +67,10 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 <!-- https://github.com/anuraghazra/github-readme-stats -->
 <!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
 
-| <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&count_private=true&theme=github_dark" width="400px"/></a> | <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://github-readme-streak-stats.herokuapp.com/?user=ElsebaiyMohamed&theme=dark" width="400px"/></a> |
-|--|--|
+| <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&cache_seconds=86400" height="192px"/></a> | <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F85D7F&ring=F8D866&fire=F85D7F&currStreakNum=F8D866&sideNums=F8D866&currStreakLabel=F85D7F&date_format=M%20j%5B,%20Y%5D&cache_seconds=86400" height="192px"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="192px"/></a> |
+|--|--|--|
 
 <br/>
 
-## 🔝 Top Languages
-
-<a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=compact&theme=github_dark&langs_count=8" width="400px"/></a>
-
-<br/>
-
-## 📊 GitHub Activity Graph
-
-<a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&theme=github-dark&hide_border=true" width="100%"/></a>
+<!-- https://github.com/ElsebaiyMohamed/github-readme-activity-graph -->
+<a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&area=true&hide_border=true&cache_seconds=86400" width="100%"/></a>
