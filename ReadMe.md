@@ -72,7 +72,7 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 <td width="55%" valign="top">
 <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&cache_seconds=86400" width="100%"/></a>
 <br/>
-<a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com/?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F8D56F&ring=F8D866&fire=F8D56F&currStreakNum=F8D866&sideNums=F8D866&currStreakLabel=F8D56F&date_format=%22M%20j%5B,%20Y%5D%22&cache_seconds=86400" width="100%"/></a>
+<a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com/?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F8D56F&ring=F8D866&fire=F8D56F&currStreakNum=F8D866&sideNums=F8D866&currStreakLabel=F8D56F&date_format=M%20j%5B,%20Y%5D&cache_seconds=86400" width="100%"/></a>
 </td>
 <td width="45%" valign="top">
 <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=10&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" width="100%" height="100%"/></a>
@@ -86,12 +86,6 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 <a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F8D56F&point=FFFFFF&area=true&hide_border=true&cache_seconds=86400" width="100%"/></a>
 
 <br/>
-
-### 🏆 Trophies
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ElsebaiyMohamed&theme=algolia&no-frame=true&no-bg=true&column=7&title=Stars,Commits,PullRequest,Issues,Repositories,Followers,MultiLanguage" width="100%"/>
-</p>
 
 ### 📌 Featured Project
 
