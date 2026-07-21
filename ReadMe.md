@@ -1,8 +1,8 @@
-<h1 align="center">Hi 👋, I'm ElSebaiy Mohammed (Sab3wi)</h1>
+<h1 align="center">Hi 👋, I'm Mohammed ElSebaiy (Sab3wi)</h1>
 <h3 align="center">AI/NLP Engineer • Arabic Speech AI Specialist (ASR · TTS · Speech-to-Speech) 🇪🇬</h3>
 
 <p align="center">
-  Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Egypt-based roles
+  Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Cairo-based roles
 </p>
 
 <p align="center">
@@ -64,12 +64,25 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 
 ## 💻 GitHub Profile Stats
 
+<!--
+  NOTE ON RELIABILITY: the cards below use the free public instances of these
+  services, which are shared by every GitHub user in the world and frequently
+  hit GitHub's API rate limit (causing blank/broken images at random times).
+  For a permanent fix, deploy your own instance (free, ~5 min):
+    - https://github.com/anuraghazra/github-readme-stats  → 1-click "Deploy to Vercel"
+    - https://github.com/Ashutosh00710/github-readme-activity-graph → same
+  Then replace "github-readme-stats.vercel.app" and
+  "github-readme-activity-graph.vercel.app" below with your own *.vercel.app domain.
+  Until then, cache_seconds=86400 + fewer API-heavy flags below reduce (but don't
+  eliminate) how often you'll hit the shared rate limit.
+-->
+
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's GitHub Stats" src="https://github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" height="192px"/>
+    <img alt="ElsebaiyMohamed's GitHub Stats" src="https://github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&cache_seconds=86400" height="192px"/>
   </a>
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff" height="192px"/>
+    <img alt="ElsebaiyMohamed's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="192px"/>
   </a>
 </p>
 
@@ -83,7 +96,7 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 
 <p align="center">
   <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's Language Breakdown" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=donut-vertical&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&text_color=FFFFFF&hide=Jupyter%20Notebook,Roff" height="300px"/>
+    <img alt="ElsebaiyMohamed's Language Breakdown" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=donut-vertical&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&text_color=FFFFFF&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="300px"/>
   </a>
 </p>
 
