@@ -65,14 +65,9 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 ## 💻 GitHub Profile Stats
 
 <!-- https://github.com/anuraghazra/github-readme-stats -->
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1a2e&title_color=6C63FF&icon_color=6C63FF&text_color=ffffff&ring_color=6C63FF" height="165" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=h9-tec&theme=tokyonight&hide_border=true&background=1a1a2e&ring=6C63FF&fire=6C63FF&currStreakLabel=6C63FF" height="165" />
-
-</div>
-| <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&cache_seconds=86400" height="192px"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="192px"/></a>|
-|--|--|
+<!-- https://github.com/DenverCoder1/github-readme-streak-stats -->
+| <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&cache_seconds=86400" height="192px"/></a> | <a href="https://github.com/DenverCoder1/github-readme-streak-stats"><img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&ring=F8D866&fire=F8D866&currStreakLabel=F8D866" height="192px"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="192px"/></a> |
+|--|--|--|
   <br/>
   <!-- https://github.com/ElsebaiyMohamed/github-readme-activity-graph -->
   <a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true" /></a>
