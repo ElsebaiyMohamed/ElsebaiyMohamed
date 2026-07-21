@@ -2,7 +2,7 @@
 <h3 align="center">AI/NLP Engineer • Arabic Speech AI Specialist (ASR · TTS · Speech-to-Speech) 🇪🇬</h3>
 
 <p align="center">
-  Egypt · Reserve Officer (military service completed) · Open to remote & Egypt-based roles
+  Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Egypt-based roles
 </p>
 
 <p align="center">
@@ -74,7 +74,47 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 </p>
 
 <p align="center">
-  <a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph">
-    <img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
+  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+    <img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com/?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F85D7F&ring=F8D866&fire=F8D866&currStreakLabel=F8D866" height="192px"/>
   </a>
 </p>
+
+### 🗂️ Contributions by Language
+
+<p align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img alt="ElsebaiyMohamed's Language Breakdown" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=donut-vertical&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&text_color=FFFFFF&hide=Jupyter%20Notebook,Roff" height="300px"/>
+  </a>
+</p>
+
+### 📅 Activity Graph — pick a year
+
+> GitHub READMEs are static markdown (no JavaScript), so a live month/year dropdown like the one on your profile page itself isn't possible here. This accordion is the closest equivalent: click a year to expand its graph, no JS required.
+
+<details>
+<summary><b>2026</b></summary>
+<p align="center">
+  <img alt="ElsebaiyMohamed's 2026 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2026&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
+</p>
+</details>
+
+<details>
+<summary><b>2025</b></summary>
+<p align="center">
+  <img alt="ElsebaiyMohamed's 2025 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2025&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
+</p>
+</details>
+
+<details>
+<summary><b>2024</b></summary>
+<p align="center">
+  <img alt="ElsebaiyMohamed's 2024 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2024&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
+</p>
+</details>
+
+<details>
+<summary><b>All-time</b></summary>
+<p align="center">
+  <img alt="ElsebaiyMohamed's Full Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
+</p>
+</details>
