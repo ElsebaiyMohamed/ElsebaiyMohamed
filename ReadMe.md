@@ -83,7 +83,7 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 <br/>
 
 <!-- https://github.com/ElsebaiyMohamed/github-readme-activity-graph -->
-<a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F8D56F&point=FFFFFF&area=true&hide_border=true&cache_seconds=86400" width="100%"/></a>
+<a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F8D56F&point=FFFFFF&area=true&hide_border=true" width="100%"/></a>
 
 <br/>
 
