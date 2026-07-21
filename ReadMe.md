@@ -1,8 +1,8 @@
-<h1 align="center">Hi 👋, I'm Mohammed ElSebaiy (Sab3wi)</h1>
+<h1 align="center">Hi 👋, I'm ElSebaiy Mohammed (Sab3wi)</h1>
 <h3 align="center">AI/NLP Engineer • Arabic Speech AI Specialist (ASR · TTS · Speech-to-Speech) 🇪🇬</h3>
 
 <p align="center">
-  Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Cairo-based roles
+  Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Egypt-based roles
 </p>
 
 <p align="center">
@@ -64,70 +64,9 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 
 ## 💻 GitHub Profile Stats
 
-<!--
-  NOTE ON RELIABILITY: the cards below use the free public instances of these
-  services, which are shared by every GitHub user in the world and frequently
-  hit GitHub's API rate limit (causing blank/broken images at random times).
-  For a permanent fix, deploy your own instance (free, ~5 min):
-    - https://github.com/anuraghazra/github-readme-stats  → 1-click "Deploy to Vercel"
-    - https://github.com/Ashutosh00710/github-readme-activity-graph → same
-  Then replace "github-readme-stats.vercel.app" and
-  "github-readme-activity-graph.vercel.app" below with your own *.vercel.app domain.
-  Until then, cache_seconds=86400 + fewer API-heavy flags below reduce (but don't
-  eliminate) how often you'll hit the shared rate limit.
--->
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's GitHub Stats" src="https://github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&cache_seconds=86400" height="192px"/>
-  </a>
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="192px"/>
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-    <img alt="ElsebaiyMohamed's Streak Stats" src="https://streak-stats.demolab.com/?user=ElsebaiyMohamed&theme=react&hide_border=true&background=1F222E&stroke=F85D7F&ring=F8D866&fire=F8D866&currStreakLabel=F8D866" height="192px"/>
-  </a>
-</p>
-
-### 🗂️ Contributions by Language
-
-<p align="center">
-  <a href="https://github.com/anuraghazra/github-readme-stats">
-    <img alt="ElsebaiyMohamed's Language Breakdown" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=donut-vertical&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&text_color=FFFFFF&hide=Jupyter%20Notebook,Roff&cache_seconds=86400" height="300px"/>
-  </a>
-</p>
-
-### 📅 Activity Graph — pick a year
-
-> GitHub READMEs are static markdown (no JavaScript), so a live month/year dropdown like the one on your profile page itself isn't possible here. This accordion is the closest equivalent: click a year to expand its graph, no JS required.
-
-<details>
-<summary><b>2026</b></summary>
-<p align="center">
-  <img alt="ElsebaiyMohamed's 2026 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2026&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
-</p>
-</details>
-
-<details>
-<summary><b>2025</b></summary>
-<p align="center">
-  <img alt="ElsebaiyMohamed's 2025 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2025&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
-</p>
-</details>
-
-<details>
-<summary><b>2024</b></summary>
-<p align="center">
-  <img alt="ElsebaiyMohamed's 2024 Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&year=2024&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
-</p>
-</details>
-
-<details>
-<summary><b>All-time</b></summary>
-<p align="center">
-  <img alt="ElsebaiyMohamed's Full Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true"/>
-</p>
-</details>
+<!-- https://github.com/anuraghazra/github-readme-stats -->
+| <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Github Stats" src="https://denvercoder1-github-readme-stats.vercel.app/api/?username=ElsebaiyMohamed&show_icons=true&include_all_commits=true&count_private=true&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866" height="192px"/></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img alt="ElsebaiyMohamed's Top Languages" src="https://denvercoder1-github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&langs_count=8&layout=compact&theme=react&hide_border=true&bg_color=1F222E&title_color=F85D7F&icon_color=F8D866&hide=Jupyter%20Notebook,Roff" height="192px"/></a>|
+|--|--|
+  <br/>
+  <!-- https://github.com/ElsebaiyMohamed/github-readme-activity-graph -->
+  <a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img alt="ElsebaiyMohamed's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph/?username=ElsebaiyMohamed&bg_color=1F222E&color=F8D866&line=F85D7F&point=FFFFFF&hide_border=true" /></a>
