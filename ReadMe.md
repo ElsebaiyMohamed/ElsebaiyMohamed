@@ -4,7 +4,7 @@
 <p align="center">
   Cairo, Egypt · Reserve Officer (military service completed) · Open to remote & Egypt-based roles
 </p>
-
+ 
 <p align="center">
   <a href="https://www.linkedin.com/in/sebaie-mohammed/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://huggingface.co/seba3y" target="_blank"><img src="https://img.shields.io/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face"/></a>
