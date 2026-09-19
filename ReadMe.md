@@ -87,12 +87,6 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 
 <br/>
 
-### 📅 Isometric Commit Calendar
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ElsebaiyMohamed/ElsebaiyMohamed/main/metrics.isocalendar.svg" width="100%"/>
-</p>
-
 ### 🗂️ Languages by Commits
 
 <p align="center">
