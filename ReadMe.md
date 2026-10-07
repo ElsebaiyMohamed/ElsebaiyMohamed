@@ -8,8 +8,6 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/sebaie-mohammed/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="https://huggingface.co/seba3y" target="_blank"><img src="https://img.shields.io/badge/Huggingface-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face"/></a>
-  <a href="https://stackoverflow.com/users/13425950" target="_blank"><img src="https://img.shields.io/badge/Stack_Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow"/></a>
-  <a href="https://kaggle.com/sebaeymohamed" target="_blank"><img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=Kaggle&logoColor=white" alt="Kaggle"/></a>
 </p>
 
 ---
