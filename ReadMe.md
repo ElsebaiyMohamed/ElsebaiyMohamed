@@ -14,13 +14,27 @@
 
 ### 🎯 What I do
 
-I build production speech AI systems for Arabic and its dialects — fine-tuning **Wav2Vec2**, **Whisper**, and **HiFi-GAN** for ASR, TTS, and full speech-to-speech pipelines. Currently job-hunting for AI/NLP roles in Egypt or remote positions.
+I'm an AI/NLP engineer with ~4 years of experience building speech and language systems, with a focus on Arabic and its dialects. I take models from research notebook to deployed service: fine-tuning **Wav2Vec2**, **Whisper**, **SpeechT5** and **HiFi-GAN**, evaluating them properly, then shipping them behind **FastAPI** + **Docker** REST APIs.
+
+**Latest work**
+- **FluentAI** — FastAPI service that scores English pronunciation, fluency and content from uploaded audio, powered by my fine-tuned Wav2Vec2 model.
+- **MiniRag_26** — step-by-step, production-style RAG backend: FastAPI, PostgreSQL + PgVector, Celery workers, Docker Compose, Prometheus/Grafana, and local LLMs via Ollama.
+- **BnSR** — Bengali.AI Kaggle competition: out-of-distribution speech recognition on 1,200 hours of crowdsourced audio.
+
+**What I can build for you**
+- Arabic / dialect ASR, TTS and full speech-to-speech pipelines
+- Automatic video dubbing and speech translation
+- Pronunciation and fluency assessment for language-learning products
+- RAG and LLM-powered apps, from prototype to a deployed API
+- Model optimization for production (ONNX, quantization, parameter-efficient fine-tuning)
+
 
 ### 💬 Ask me about
 
 - Arabic ASR, TTS, and speech-to-speech pipelines
-- Fine-tuning Wav2Vec2, Whisper, HiFi-GAN
+- Fine-tuning Wav2Vec2, Whisper, SpeechT5, HiFi-GAN (CTC, LoRA/PEFT, layer freezing)
 - Pronunciation & fluency assessment (forced alignment, CTC)
+- Building production RAG apps and serving models with FastAPI & Docker
 - Deep Learning (PyTorch, TensorFlow, Hugging Face Transformers)
 - Natural Language Processing (NLP)
 - Math for ML (Linear Algebra, Calculus, Probability & Statistics)
@@ -28,8 +42,10 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 
 ### 🚀 Featured Work
 
-- **Modablaj** — End-to-end AI video dubbing system. Graduation project, graded *Excellent with Honors*.
-- **Pronunciation Assessment Tool** — Wav2Vec2 + CTC forced alignment, **88% accuracy**.
+- **[Modablag](https://github.com/ElsebaiyMohamed/Modablag)** — End-to-end English→Arabic video dubbing: Wav2Vec2 ASR, neural machine translation, FastSpeech2 TTS, plus punctuation and tashkeel models. Graduation project, graded *Excellent with Honors*.
+- **[FluentAI](https://github.com/ElsebaiyMohamed/FluentAI)** — Pronunciation assessment API (Wav2Vec2 + CTC forced alignment, **88% accuracy**) returning pronunciation, fluency and content scores.
+- **[MiniRag_26](https://github.com/ElsebaiyMohamed/MiniRag_26)** — Educational production-ready RAG app: FastAPI, PgVector, Celery, Docker, monitoring.
+- **[BnSR](https://github.com/ElsebaiyMohamed/BnSR)** — Bengali speech recognition experiments: Wav2Vec2-CTC, transformer decoders, SpeechT5, LoRA/PEFT.
 - **Speak Lab** — Gradio app for English speaking practice with streak tracking and pronunciation scoring hooks, deployed on Hugging Face Spaces.
 
 ### 📄 Publications
@@ -40,7 +56,8 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
 ### 🏆 Competitions
 
 - Top 18/100 — Arabic Summarization Challenge (ROUGE-L 19.2)
-- Bengali ASR Challenge (WER 0.89)
+- Bengali.AI Speech Recognition (Kaggle, out-of-distribution ASR) — WER 0.89 · [BnSR](https://github.com/ElsebaiyMohamed/BnSR)
+
 
 ### 🛠️ Core Stack
 
@@ -49,9 +66,14 @@ I build production speech AI systems for Arabic and its dialects — fine-tuning
   <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white"/>
   <img src="https://img.shields.io/badge/🤗_Transformers-FFD21E?style=flat-square"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
+  <img src="https://img.shields.io/badge/ONNX-005CED?style=flat-square&logo=onnx&logoColor=white"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white"/>
   <img src="https://img.shields.io/badge/Gradio-FF7C00?style=flat-square"/>
   <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
 </p>
+
 
 ### 🐛 Issues Filed
 
