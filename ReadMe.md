@@ -14,7 +14,7 @@
 
 ### 🎯 What I do
 
-I'm an AI/NLP engineer with ~4 years of experience building speech and language systems, with a focus on Arabic and its dialects. I take models from research notebook to deployed service: fine-tuning **Wav2Vec2**, **Whisper**, **SpeechT5** and **HiFi-GAN**, evaluating them properly, then shipping them behind **FastAPI** + **Docker** REST APIs.
+I'm an AI/NLP engineer with ~2 years of experience building speech and language systems, with a focus on Arabic and its dialects. I take models from research notebook to deployed service: fine-tuning **Wav2Vec2**, **Whisper**, **SpeechT5** and **HiFi-GAN**, evaluating them properly, then shipping them behind **FastAPI** + **Docker** REST APIs.
 
 **Latest work**
 - **FluentAI** — FastAPI service that scores English pronunciation, fluency and content from uploaded audio, powered by my fine-tuned Wav2Vec2 model.
