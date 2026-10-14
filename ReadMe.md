@@ -115,5 +115,6 @@ I'm an AI/NLP engineer with ~2 years of experience building speech and language 
 ### 📌 Featured Project
 
 <p align="center">
+  <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img alt="MiniRag_26 repo card" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=MiniRag_26&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&cache_seconds=86400" width="49%"/></a>
   <a href="https://github.com/ElsebaiyMohamed/Modablag"><img alt="Modablag repo card" src="https://denvercoder1-github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=Modablag&theme=react&hide_border=true&bg_color=1F222E&title_color=F8D56F&icon_color=F8D866&cache_seconds=86400" width="49%"/></a>
 </p>
