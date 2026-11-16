@@ -1,5 +1,5 @@
-<h1 align="center">Hi 👋, I'm ElSebaiy Mohammed</h1>
-<h3 align="center">AI/NLP Engineer • Arabic Speech AI (ASR · TTS · Speech-to-Speech) 🇪🇬</h3>
+<h1 align="center">Hi 👋, I'm ElSebaiy Mohammed (Sab3wi)</h1>
+<h3 align="center">AI/NLP Engineer • Arabic Speech AI Specialist (ASR · TTS · Speech-to-Speech) 🇪🇬</h3>
 
 <p align="center">
   Cairo, Egypt · Open to remote &amp; Egypt-based roles<br><br>
@@ -11,7 +11,7 @@
 
 ## 🎯 What I do
 
-AI/NLP engineer with ~2 years of experience building speech and language systems, focused on Arabic and its dialects. I take models from research notebook to deployed service: fine-tuning, evaluation, and production deployment.
+I'm an AI/NLP engineer with ~4 years of experience building speech and language systems, focused on Arabic and its dialects. I take models from research notebook to deployed service: fine-tuning, evaluation, and production deployment.
 
 **What I can build for you**
 
@@ -19,32 +19,37 @@ AI/NLP engineer with ~2 years of experience building speech and language systems
 - Automatic video dubbing and speech translation
 - Pronunciation and fluency assessment for language-learning products
 - RAG and LLM-powered apps, from prototype to deployed API
-- Model optimization for production (ONNX, quantization, PEFT)
+- Model optimization for production (ONNX, quantization, parameter-efficient fine-tuning)
 
 ## 🚀 Featured Work
 
-- **[Modablag](https://github.com/ElsebaiyMohamed/Modablag)**: English→Arabic video dubbing with Wav2Vec2 ASR, NMT, FastSpeech2 TTS, punctuation, and tashkeel.
-- **[FluentAI](https://github.com/ElsebaiyMohamed/FluentAI)**: FastAPI pronunciation assessment (Wav2Vec2 + CTC forced alignment, **88% accuracy**) returning pronunciation, fluency, and content scores.
-- **[MiniRag_26](https://github.com/ElsebaiyMohamed/MiniRag_26)**: Production-style RAG backend with FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana, and local LLMs via Ollama.
-- **[BnSR](https://github.com/ElsebaiyMohamed/BnSR)**: Bengali.AI Kaggle out-of-distribution ASR: Wav2Vec2-CTC, SpeechT5, LoRA/PEFT.
-- **Speak Lab**: Gradio app for English speaking practice, deployed on Hugging Face Spaces. <!-- add link -->
+<p align="center">
+  <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img src="assets/featured-minirag_26.svg" width="49%" alt="MiniRag_26"></a>
+  <a href="https://github.com/ElsebaiyMohamed/Modablag"><img src="assets/featured-modablag.svg" width="49%" alt="Modablag"></a>
+  <a href="https://github.com/ElsebaiyMohamed/FluentAI"><img src="assets/featured-fluentai.svg" width="49%" alt="FluentAI"></a>
+  <a href="https://github.com/ElsebaiyMohamed/BnSR"><img src="assets/featured-bnsr.svg" width="49%" alt="BnSR"></a>
+</p>
+
+Highlights: Modablag is an English→Arabic dubbing pipeline (Wav2Vec2 ASR, NMT, FastSpeech2 TTS, punctuation, tashkeel). FluentAI scores pronunciation, fluency, and content (Wav2Vec2 + CTC forced alignment, **88% accuracy**). MiniRag_26 is a production-style RAG backend with PgVector, Celery, Docker Compose, and Prometheus/Grafana. Speak Lab is a Gradio speaking-practice app on Hugging Face Spaces.
 
 ## 💬 Ask me about
 
-- Arabic ASR, TTS, and speech-to-speech
+- Arabic ASR, TTS, and speech-to-speech pipelines
 - Fine-tuning Wav2Vec2, Whisper, SpeechT5, HiFi-GAN (CTC, LoRA/PEFT, layer freezing)
 - Pronunciation and fluency assessment (forced alignment, CTC)
 - Production RAG apps and serving models with FastAPI & Docker
-- Deep Learning (PyTorch, TensorFlow, Hugging Face), NLP, math for ML
+- Deep Learning (PyTorch, TensorFlow, Hugging Face Transformers), NLP
+- Math for ML (Linear Algebra, Calculus, Probability & Statistics)
 
 ## 📄 Publications
 
-- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. <!-- add title + DOI link -->
+- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. <!-- add paper title + DOI link -->
+- A second paper is under review in a Q1/Q2 journal.
 
 ## 🏆 Competitions
 
-- Arabic Summarization Challenge: top 18 of 100 (ROUGE-L 19.2)
-- [Bengali.AI Speech Recognition](https://github.com/ElsebaiyMohamed/BnSR) (Kaggle): <!-- state metric + rank clearly -->
+- Top 18/100, Arabic Summarization Challenge (ROUGE-L 19.2)
+- [Bengali.AI Speech Recognition](https://github.com/ElsebaiyMohamed/BnSR) (Kaggle, out-of-distribution ASR): WER 0.89
 
 ## 🐛 Open-source
 
@@ -62,43 +67,18 @@ AI/NLP engineer with ~2 years of experience building speech and language systems
   <a href="https://www.postgresql.org"><img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"></a>
   <a href="https://docs.celeryq.dev"><img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=celery&logoColor=white" alt="Celery"></a>
   <a href="https://www.gradio.app"><img src="https://img.shields.io/badge/Gradio-FF7C00?style=flat-square" alt="Gradio"></a>
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
 </p>
 
-## 💻 GitHub Stats
+---
+
+## 💻 GitHub in numbers
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&show_icons=true&theme=react&hide_border=true" alt="GitHub Stats">
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&layout=compact&theme=react&hide_border=true" alt="Top Languages">
+  <img src="assets/stats.svg" width="100%" alt="All-time GitHub totals">
 </p>
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ElsebaiyMohamed&theme=react&hide_border=true" alt="GitHub Streak">
+  <img src="assets/rhythm.svg" width="100%" alt="Contribution rhythm, last 52 weeks">
 </p>
 
-<p align="center">
-  <img src="./metrics.languages.svg" alt="Languages by commits">
-</p>
-
-## 📌 Pinned Projects
-
-<p align="center">
-  <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=MiniRag_26&theme=react&hide_border=true" alt="MiniRag_26"></a>
-  <a href="https://github.com/ElsebaiyMohamed/Modablag"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=Modablag&theme=react&hide_border=true" alt="Modablag"></a>
-</p>
-
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3><a href="https://github.com/ElsebaiyMohamed/MiniRag_26">MiniRag_26</a></h3>
-      Production-style RAG backend: FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana, Ollama.<br><br>
-      <img src="https://img.shields.io/github/stars/ElsebaiyMohamed/MiniRag_26?style=flat-square" alt="stars">
-      <img src="https://img.shields.io/github/languages/top/ElsebaiyMohamed/MiniRag_26?style=flat-square" alt="language">
-    </td>
-    <td width="50%">
-      <h3><a href="https://github.com/ElsebaiyMohamed/Modablag">Modablag</a></h3>
-      English→Arabic video dubbing: Wav2Vec2 ASR, NMT, FastSpeech2 TTS, tashkeel.<br><br>
-      <img src="https://img.shields.io/github/stars/ElsebaiyMohamed/Modablag?style=flat-square" alt="stars">
-      <img src="https://img.shields.io/github/languages/top/ElsebaiyMohamed/Modablag?style=flat-square" alt="language">
-    </td>
-  </tr>
-</table>
+<sub>Cards are generated by a GitHub Action every 6 hours from the GitHub API.</sub>
