@@ -80,18 +80,21 @@ I'm an AI/NLP engineer with ~2 years of experience building speech and language 
 
 ## 💻 GitHub Profile Stats
 
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&amp;show_icons=true&amp;theme=react&amp;hide_border=true" alt="GitHub stats" />
-  <img width="49%" src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&amp;theme=react&amp;hide_border=true" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&amp;layout=compact&amp;theme=react&amp;hide_border=true" alt="Top languages" />
-</p>
-
-<p align="center">
-  <a href="https://github.com/ElsebaiyMohamed/github-readme-activity-graph"><img src="https://github-readme-activity-graph.vercel.app/graph?username=ElsebaiyMohamed&amp;theme=react-dark&amp;hide_border=true" alt="GitHub activity graph" /></a>
-</p>
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api?username=ElsebaiyMohamed&amp;show_icons=true&amp;theme=react&amp;hide_border=true" alt="ElsebaiyMohamed's GitHub Stats" />
+    </td>
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ElsebaiyMohamed&amp;layout=compact&amp;theme=react&amp;hide_border=true" alt="ElsebaiyMohamed's Top Languages" />
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <img src="https://streak-stats.demolab.com?user=ElsebaiyMohamed&amp;theme=react&amp;hide_border=true" alt="ElsebaiyMohamed's GitHub Streak" />
+    </td>
+  </tr>
+</table>
 
 ### 🗂️ Languages by Commits
 
@@ -99,9 +102,9 @@ I'm an AI/NLP engineer with ~2 years of experience building speech and language 
   <img src="https://raw.githubusercontent.com/ElsebaiyMohamed/ElsebaiyMohamed/main/metrics.languages.svg" width="100%" alt="Languages by commits" />
 </p>
 
-### 📌 Featured Projects
+### 📌 Featured Project
 
 <p align="center">
-  <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&amp;repo=MiniRag_26&amp;theme=react&amp;hide_border=true" alt="MiniRag_26 repository card" /></a>
-  <a href="https://github.com/ElsebaiyMohamed/Modablag"><img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&amp;repo=Modablag&amp;theme=react&amp;hide_border=true" alt="Modablag repository card" /></a>
+  <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&amp;repo=MiniRag_26&amp;theme=react&amp;hide_border=true" alt="MiniRag_26 repository card showing description, stars, and forks" /></a>
+  <a href="https://github.com/ElsebaiyMohamed/Modablag"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&amp;repo=Modablag&amp;theme=react&amp;hide_border=true" alt="Modablag repository card showing description, stars, and forks" /></a>
 </p>
