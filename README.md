@@ -84,3 +84,21 @@ AI/NLP engineer with ~2 years of experience building speech and language systems
   <a href="https://github.com/ElsebaiyMohamed/MiniRag_26"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=MiniRag_26&theme=react&hide_border=true" alt="MiniRag_26"></a>
   <a href="https://github.com/ElsebaiyMohamed/Modablag"><img src="https://github-readme-stats.vercel.app/api/pin/?username=ElsebaiyMohamed&repo=Modablag&theme=react&hide_border=true" alt="Modablag"></a>
 </p>
+
+
+<table>
+  <tr>
+    <td width="50%">
+      <h3><a href="https://github.com/ElsebaiyMohamed/MiniRag_26">MiniRag_26</a></h3>
+      Production-style RAG backend: FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana, Ollama.<br><br>
+      <img src="https://img.shields.io/github/stars/ElsebaiyMohamed/MiniRag_26?style=flat-square" alt="stars">
+      <img src="https://img.shields.io/github/languages/top/ElsebaiyMohamed/MiniRag_26?style=flat-square" alt="language">
+    </td>
+    <td width="50%">
+      <h3><a href="https://github.com/ElsebaiyMohamed/Modablag">Modablag</a></h3>
+      English→Arabic video dubbing: Wav2Vec2 ASR, NMT, FastSpeech2 TTS, tashkeel.<br><br>
+      <img src="https://img.shields.io/github/stars/ElsebaiyMohamed/Modablag?style=flat-square" alt="stars">
+      <img src="https://img.shields.io/github/languages/top/ElsebaiyMohamed/Modablag?style=flat-square" alt="language">
+    </td>
+  </tr>
+</table>
