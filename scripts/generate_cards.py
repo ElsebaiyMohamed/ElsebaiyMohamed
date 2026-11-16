@@ -189,11 +189,12 @@ def wave(seed, x, y, w, h, p, bars=48):
     return "".join(out)
 
 
-def svg(w, h, body, title, p):
+def svg(w, h, body, title, p, defs=""):
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
         f'viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">'
         f'<title>{escape(title)}</title>'
+        f'<defs>{defs}</defs>'
         f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" '
         f'fill="{p["bg"]}" stroke="{p["edge"]}"/>'
         f'<g font-family="{FONT}">{body}</g></svg>\n')
@@ -346,9 +347,8 @@ def rhythm(act):
             f'last 52 weeks</text>')
     for i, n in enumerate(weeks):
         bh = max(3.0, 84 * (n / peak) ** 0.6)
-        body += (f'<rect x="{32 + i * step:.1f}" y="{132 - bh / 2:.1f}" '
-                 f'width="{step * 0.58:.1f}" height="{bh:.1f}" rx="{step * 0.29:.1f}" '
-                 f'fill="{p["accent"]}" opacity="{0.35 + 0.6 * n / peak:.2f}"/>')
+        body += bar(32 + i * step, 132 - bh / 2, step * 0.58, bh, step * 0.29,
+                    p["accent"], 0.35 + 0.6 * n / peak, i, 132)
     current, longest = streaks(days)
     by_weekday = {}
     for key, n in days.items():
@@ -365,6 +365,247 @@ def rhythm(act):
                  f'fill="{p["ink"]}">{fmt(value)}</text>'
                  f'<text x="{x}" y="236" font-size="12" fill="{p["mute"]}">{label}</text>')
     return svg(W, H, body, f"Contribution rhythm for {USER}", p)
+
+
+# ------------------------------------------------- animated charts and banner
+SPLINE = "0 0 1 1;0.2 0.8 0.2 1"
+RAINBOW = ["#5B9DFF", "#5FD4B0", "#F5B85A", "#FF7FA8", "#F4606F"]  # the project colors
+
+
+def stops():
+    n = len(RAINBOW) - 1
+    return "".join(f'<stop offset="{i / n:.2f}" stop-color="{c}"/>'
+                   for i, c in enumerate(RAINBOW))
+
+
+def _timing(i, gap, tail):
+    delay = min(i * gap, 1.3)
+    total = delay + tail
+    return total, f"0;{delay / total:.3f};1"
+
+
+def bar(x, y, w, h, rx, fill, opacity, i, base):
+    """Rounded bar that grows out of `base` (a y coordinate) once on load.
+    Final geometry is in the attributes, so viewers without SMIL show the chart."""
+    total, kt = _timing(i, 0.03, 0.8)
+    common = (f'keyTimes="{kt}" calcMode="spline" keySplines="{SPLINE}" '
+              f'dur="{total:.2f}s" fill="freeze"')
+    return (f'<rect x="{x:.1f}" y="{y:.1f}" width="{w:.1f}" height="{h:.1f}" rx="{rx:.1f}" '
+            f'fill="{fill}" opacity="{opacity:.2f}">'
+            f'<animate attributeName="y" values="{base:.1f};{base:.1f};{y:.1f}" {common}/>'
+            f'<animate attributeName="height" values="0;0;{h:.1f}" {common}/></rect>')
+
+
+def breathe(x, cy, w, lo, hi, seed):
+    """Looping waveform bar for the banner."""
+    dur = 1.4 + (seed % 8) * 0.22
+    begin = -(seed % 13) * 0.3
+    mid = (lo + hi) / 2
+    common = f'dur="{dur:.2f}s" begin="{begin:.1f}s" repeatCount="indefinite"'
+    return (f'<rect x="{x:.1f}" y="{cy - mid / 2:.1f}" width="{w}" height="{mid:.1f}" '
+            f'rx="{w / 2}" fill="url(#rbv)">'
+            f'<animate attributeName="height" values="{lo:.1f};{hi:.1f};{lo:.1f}" {common}/>'
+            f'<animate attributeName="y" values="{cy - lo / 2:.1f};{cy - hi / 2:.1f};'
+            f'{cy - lo / 2:.1f}" {common}/></rect>')
+
+
+def header():
+    p = P_STATS
+    W, H, nw = 900, 240, 500
+    roles = ["AI/NLP Engineer",
+             "Arabic speech AI: ASR, TTS, speech-to-speech",
+             "From research notebook to production API"]
+    reveal = (f'dur="2.2s" fill="freeze" calcMode="spline" keyTimes="0;0.15;1" '
+              f'keySplines="0 0 1 1;0.4 0 0.2 1"')
+    defs = (
+        f'<linearGradient id="rbw" gradientUnits="userSpaceOnUse" x1="48" x2="{48 + nw}" '
+        f'y1="0" y2="0">{stops()}</linearGradient>'
+        f'<linearGradient id="rbv" gradientUnits="userSpaceOnUse" x1="560" x2="860" '
+        f'y1="0" y2="0">{stops()}</linearGradient>'
+        f'<radialGradient id="glow" cx="0.8" cy="0.5" r="0.7">'
+        f'<stop offset="0" stop-color="{p["accent"]}" stop-opacity="0.16"/>'
+        f'<stop offset="1" stop-color="{p["accent"]}" stop-opacity="0"/></radialGradient>'
+        f'<clipPath id="reveal"><rect x="48" y="60" height="72" width="{nw}">'
+        f'<animate attributeName="width" values="0;0;{nw}" {reveal}/></rect></clipPath>')
+
+    body = f'<rect width="{W}" height="{H}" rx="14" fill="url(#glow)"/>'
+    body += f'<text x="48" y="50" font-size="18" fill="{p["mute"]}">Hi, I\'m</text>'
+    body += (f'<text x="48" y="118" font-size="46" font-weight="800" fill="{p["ink"]}" '
+             f'textLength="{nw}" lengthAdjust="spacingAndGlyphs" clip-path="url(#reveal)">'
+             f'ElSebaiy Mohammed</text>')
+    body += (f'<rect x="48" y="138" height="4" rx="2" width="{nw}" fill="url(#rbw)">'
+             f'<animate attributeName="width" values="0;0;{nw}" {reveal}/></rect>')
+    body += (f'<rect x="48" y="70" width="3" height="54" rx="1.5" fill="{p["accent"]}">'
+             f'<animate attributeName="x" values="48;48;{48 + nw + 6}" {reveal}/>'
+             f'<animate attributeName="opacity" values="1;0;1" dur="0.9s" '
+             f'repeatCount="indefinite"/></rect>')
+    for k, role in enumerate(roles):
+        s = k / len(roles)
+        keys = [0, s, s + 0.04, s + 0.29, s + 0.33, 1]
+        keys = [min(v, 1) for v in keys]
+        body += (f'<text x="48" y="182" font-size="22" font-weight="600" fill="{p["accent"]}" '
+                 f'opacity="{1 if k == 0 else 0}">{escape(role)}'
+                 f'<animate attributeName="opacity" values="0;0;1;1;0;0" '
+                 f'keyTimes="{";".join(f"{v:.3f}" for v in keys)}" dur="9s" begin="1.8s" '
+                 f'repeatCount="indefinite"/></text>')
+    body += (f'<text x="48" y="214" font-size="14" fill="{p["mute"]}">Cairo, Egypt  •  '
+             f'Open to remote and Egypt-based roles</text>')
+    raw = hashlib.shake_256(b"header").digest(60)
+    n = 30
+    for i in range(n):
+        taper = math.sin(math.pi * (i + 0.5) / n) ** 0.7
+        lo = 6 + taper * 14 * raw[i] / 255
+        hi = 12 + taper * (52 + 36 * raw[i + 30] / 255)
+        body += breathe(560 + i * 10, 120, 5.5, lo, hi, raw[i])
+    return svg(W, H, body, "ElSebaiy Mohammed, AI/NLP engineer", p, defs)
+
+
+def divider():
+    W, H, n = 900, 26, 120
+    raw = hashlib.shake_256(b"divider").digest(n)
+    step = W / n
+    bars = ""
+    for i, b in enumerate(raw):
+        taper = math.sin(math.pi * (i + 0.5) / n) ** 0.6
+        bh = max(2.0, 20 * (0.15 + 0.85 * b / 255) * taper)
+        bars += (f'<rect x="{i * step:.1f}" y="{(H - bh) / 2:.1f}" width="{step * 0.5:.1f}" '
+                 f'height="{bh:.1f}" rx="{step * 0.25:.1f}" fill="url(#d)" opacity="0.85"/>')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" '
+            f'viewBox="0 0 {W} {H}" role="presentation"><defs>'
+            f'<linearGradient id="d" gradientUnits="userSpaceOnUse" x1="0" x2="{W}" '
+            f'y1="0" y2="0">{stops()}</linearGradient></defs>{bars}</svg>\n')
+
+
+def title_block(title, sub, p):
+    return (f'<text x="32" y="44" font-size="22" font-weight="700" fill="{p["ink"]}">'
+            f'{escape(title)}</text>'
+            f'<text x="32" y="66" font-size="13" fill="{p["mute"]}">{escape(sub)}</text>')
+
+
+def heatmap(days):
+    p = P_STATS
+    W, H = 820, 232
+    today = datetime.now(timezone.utc).date()
+    start = today - timedelta(days=(today.weekday() + 1) % 7 + 52 * 7)
+    peak = max(days.values()) or 1
+    x0, y0, pitch, size = 40, 92, 14, 11
+    cells, total = "", 0
+    for col in range(53):
+        first = start + timedelta(days=col * 7)
+        if first.day <= 7:
+            cells += (f'<text x="{x0 + col * pitch}" y="84" font-size="11" '
+                      f'fill="{p["mute"]}">{first:%b}</text>')
+        tshift, kt = _timing(col, 0.025, 0.4)
+        for row in range(7):
+            d = first + timedelta(days=row)
+            if d > today:
+                continue
+            n = days.get(d.isoformat(), 0)
+            total += n
+            if n == 0:
+                fill, fo = "#2B2450", 1
+            else:
+                lvl = min(4, 1 + int(4 * (n / peak) ** 0.6))
+                fill, fo = p["accent"], {1: 0.3, 2: 0.55, 3: 0.8, 4: 1}[lvl]
+            cells += (f'<rect x="{x0 + col * pitch}" y="{y0 + row * pitch}" width="{size}" '
+                      f'height="{size}" rx="3" fill="{fill}" fill-opacity="{fo}">'
+                      f'<animate attributeName="opacity" values="0;0;1" keyTimes="{kt}" '
+                      f'dur="{tshift:.2f}s" fill="freeze"/></rect>')
+    lx = W - 32 - 150
+    legend = f'<text x="{lx}" y="217" font-size="11" fill="{p["mute"]}">Less</text>'
+    for k, (fill, fo) in enumerate([("#2B2450", 1)] + [(p["accent"], o) for o in (.3, .55, .8, 1)]):
+        legend += (f'<rect x="{lx + 32 + k * 14}" y="207" width="{size}" height="{size}" '
+                   f'rx="3" fill="{fill}" fill-opacity="{fo}"/>')
+    legend += f'<text x="{lx + 32 + 5 * 14 + 4}" y="217" font-size="11" fill="{p["mute"]}">More</text>'
+    body = title_block("Contribution calendar", f"{total:,} contributions in the last year", p)
+    return svg(W, H, body + cells + legend, f"Contribution calendar for {USER}", p)
+
+
+def weekday_chart(days):
+    p = P_STATS
+    W, H = 400, 250
+    names = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    sums = [0] * 7
+    for key, n in days.items():
+        sums[date.fromisoformat(key).weekday()] += n
+    peak = max(sums) or 1
+    base, pitch = 196, (W - 64) / 7
+    body = title_block("Weekday pattern", "Total contributions by day of week", p)
+    for i, n in enumerate(sums):
+        h = max(3.0, 94 * (n / peak))
+        x = 32 + i * pitch + (pitch - 30) / 2
+        top = n == peak
+        body += bar(x, base - h, 30, h, 8, p["accent"], 1.0 if top else 0.5, i, base)
+        body += (f'<text x="{x + 15:.1f}" y="{base - h - 7:.1f}" text-anchor="middle" '
+                 f'font-size="11" fill="{p["ink"] if top else p["mute"]}">{n:,}</text>'
+                 f'<text x="{x + 15:.1f}" y="217" text-anchor="middle" font-size="12" '
+                 f'fill="{p["mute"]}">{names[i]}</text>')
+    return svg(W, H, body, f"Weekday pattern for {USER}", p)
+
+
+def languages_donut(langs):
+    p = P_STATS
+    W, H = 400, 250
+    cx, cy, r, sw = 105, 142, 62, 24
+    circ = 2 * math.pi * r
+    body = title_block("Languages", "Share of code in public repos", p)
+    start = 0.0
+    for i, (name, pct) in enumerate(langs):
+        seg = circ * pct / 100
+        dash = max(seg - (2 if len(langs) > 1 else 0), 0.1)
+        total, kt = _timing(i, 0.25, 0.9)
+        body += (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{lang_color(name)}" '
+                 f'stroke-width="{sw}" stroke-dasharray="{dash:.2f} {circ:.2f}" '
+                 f'stroke-dashoffset="{-start:.2f}" transform="rotate(-90 {cx} {cy})">'
+                 f'<animate attributeName="stroke-dasharray" '
+                 f'values="0 {circ:.2f};0 {circ:.2f};{dash:.2f} {circ:.2f}" keyTimes="{kt}" '
+                 f'dur="{total:.2f}s" fill="freeze"/></circle>')
+        start += seg
+    if langs:
+        top, pct = langs[0]
+        body += (f'<text x="{cx}" y="{cy + 2}" text-anchor="middle" font-size="22" '
+                 f'font-weight="700" fill="{p["ink"]}">{pct:.0f}%</text>'
+                 f'<text x="{cx}" y="{cy + 20}" text-anchor="middle" font-size="11" '
+                 f'fill="{p["mute"]}">{escape(top)}</text>')
+    for i, (name, pct) in enumerate(langs):
+        y = 112 + i * 24
+        body += (f'<circle cx="222" cy="{y - 4}" r="5" fill="{lang_color(name)}"/>'
+                 f'<text x="236" y="{y}" font-size="13" fill="{p["ink"]}">{escape(name)}</text>'
+                 f'<text x="368" y="{y}" text-anchor="end" font-size="13" '
+                 f'fill="{p["mute"]}">{pct:.0f}%</text>')
+    return svg(W, H, body, f"Language share for {USER}", p)
+
+
+def monthly_chart(days):
+    p = P_STATS
+    W, H, base = 820, 230, 190
+    sums = {}
+    for key, n in days.items():
+        sums[key[:7]] = sums.get(key[:7], 0) + n
+    today = datetime.now(timezone.utc).date()
+    y, m, keys = today.year, today.month, []
+    for _ in range(36):
+        keys.append(f"{y}-{m:02d}")
+        m -= 1
+        if m == 0:
+            y, m = y - 1, 12
+    keys.reverse()
+    vals = [sums.get(k, 0) for k in keys]
+    peak = max(vals) or 1
+    step = (W - 64) / len(keys)
+    body = title_block("Monthly contributions", "Last 36 months", p)
+    for i, (k, n) in enumerate(zip(keys, vals)):
+        h = max(3.0, 100 * (n / peak) ** 0.7)
+        x = 32 + i * step
+        body += bar(x, base - h, step * 0.55, h, step * 0.27, p["accent"],
+                    0.4 + 0.6 * n / peak, i, base)
+        if n == peak:
+            body += (f'<text x="{x + step * 0.27:.1f}" y="{base - h - 8:.1f}" '
+                     f'text-anchor="middle" font-size="11" fill="{p["ink"]}">{n:,}</text>')
+        if k.endswith("-01"):
+            body += (f'<text x="{x:.1f}" y="212" font-size="12" '
+                     f'fill="{p["mute"]}">{k[:4]}</text>')
+    return svg(W, H, body, f"Monthly contributions for {USER}", p)
 
 
 def write(name, content):
@@ -386,9 +627,16 @@ def main():
         write(f"featured-{repo['name'].lower()}.svg", card(repo))
     owned = [r for r in repos if not r["fork"]]
     act = activity()
-    write("stats.svg", stats(owned, act, language_shares(owned)))
+    langs = language_shares(owned)
+    write("header.svg", header())
+    write("divider.svg", divider())
+    write("stats.svg", stats(owned, act, langs))
+    write("languages.svg", languages_donut(langs))
     if act:
         write("rhythm.svg", rhythm(act))
+        write("heatmap.svg", heatmap(act["days"]))
+        write("weekday.svg", weekday_chart(act["days"]))
+        write("monthly.svg", monthly_chart(act["days"]))
 
 
 if __name__ == "__main__":
