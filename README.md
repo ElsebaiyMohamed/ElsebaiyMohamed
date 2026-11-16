@@ -41,7 +41,6 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 | [**FluentAI**](https://github.com/ElsebaiyMohamed/FluentAI) | Pronunciation, fluency, and content scoring (**88% accuracy**) | Wav2Vec2, CTC forced alignment, FastAPI |
 | [**MiniRag_26**](https://github.com/ElsebaiyMohamed/MiniRag_26) | Production-style RAG backend | FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana |
 | [**BnSR**](https://github.com/ElsebaiyMohamed/BnSR) | Out-of-distribution Bengali speech recognition (Kaggle) | Wav2Vec2-CTC, SpeechT5, LoRA/PEFT |
-| **Speak Lab** | English speaking practice with streak tracking | Gradio, Hugging Face Spaces |
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -123,16 +122,6 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 
 **Publications**
 
-- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. <!-- add paper title + DOI link -->
-- A second paper is under review in a Q1/Q2 journal.
-
-**Competitions**
-
-- Top 18/100, Arabic Summarization Challenge (ROUGE-L 19.2)
-- [Bengali.AI Speech Recognition](https://github.com/ElsebaiyMohamed/BnSR) (Kaggle, out-of-distribution ASR): WER 0.89
-
-**Open-source**
-
-- Issue filed: [huggingface/transformers#28002](https://github.com/huggingface/transformers/issues/28002)
+- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. [doi-10.1186/s44398-025-00006-5](https://doi.org/10.1186/s44398-025-00006-5)
 
 </details>
