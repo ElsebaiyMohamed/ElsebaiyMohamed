@@ -46,7 +46,6 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 | [**FluentAI**](https://github.com/ElsebaiyMohamed/FluentAI) | Pronunciation, fluency, and content scoring (**88% accuracy**) | Wav2Vec2, CTC forced alignment, FastAPI |
 | [**MiniRag_26**](https://github.com/ElsebaiyMohamed/MiniRag_26) | Production-style RAG backend | FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana |
 | [**BnSR**](https://github.com/ElsebaiyMohamed/BnSR) | Out-of-distribution Bengali speech recognition (Kaggle) | Wav2Vec2-CTC, SpeechT5, LoRA/PEFT |
-| **Speak Lab** | English speaking practice with streak tracking | Gradio, Hugging Face Spaces |
 
 <img src="assets/divider.svg" width="100%" alt="">
 
