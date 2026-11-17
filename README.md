@@ -122,21 +122,10 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 <img src="assets/divider.svg" width="100%" alt="">
 
 <details>
-<summary><b>📄 Publications, 🏆 competitions, and 🐛 open-source</b></summary>
+<summary><b>📄 Publications</b></summary>
 <br>
 
 **Publications**
 
-- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. <!-- add paper title + DOI link -->
-- A second paper is under review in a Q1/Q2 journal.
+- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. [doi: 10.1186/s44398-025-00006-5](https://doi.org/10.1186/s44398-025-00006-5)
 
-**Competitions**
-
-- Top 18/100, Arabic Summarization Challenge (ROUGE-L 19.2)
-- [Bengali.AI Speech Recognition](https://github.com/ElsebaiyMohamed/BnSR) (Kaggle, out-of-distribution ASR): WER 0.89
-
-**Open-source**
-
-- Issue filed: [huggingface/transformers#28002](https://github.com/huggingface/transformers/issues/28002)
-
-</details>
