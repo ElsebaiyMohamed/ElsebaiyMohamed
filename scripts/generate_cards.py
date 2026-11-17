@@ -608,6 +608,68 @@ def monthly_chart(days):
     return svg(W, H, body, f"Monthly contributions for {USER}", p)
 
 
+# ------------------------------------------------------------------- badges
+BADGES = {  # key: (label, subtitle, accent). Subtitles are actions, no personal data.
+    "gmail": ("Gmail", "Email me", "#F4606F"),
+    "linkedin": ("LinkedIn", "Connect", "#5B9DFF"),
+    "x": ("X", "Follow", "#EEF3F7"),
+    "huggingface": ("Hugging Face", "Models", "#F5B85A"),
+    "nav-work": ("Work", "Featured projects", "#5B9DFF"),
+    "nav-stack": ("Stack", "Tools I use", "#5FD4B0"),
+    "nav-stats": ("Stats", "GitHub in numbers", "#F5B85A"),
+}
+
+
+def glyph(key, a):
+    """24x24 line glyphs, drawn in the badge accent."""
+    line = (f'fill="none" stroke="{a}" stroke-width="2" stroke-linecap="round" '
+            f'stroke-linejoin="round"')
+    shapes = {
+        "gmail": f'<g {line}><rect x="3" y="5" width="18" height="14" rx="3"/>'
+                 f'<path d="M3.5 7.5l8.5 6 8.5-6"/></g>',
+        "linkedin": (f'<g {line}><rect x="3" y="3" width="18" height="18" rx="4.5"/>'
+                     f'<path d="M8 11v5.5M12 16.5V11M12 13.2c0-1.4 1-2.3 2.3-2.3s2.2.9 2.2 2.3v3.3"/></g>'
+                     f'<circle cx="8" cy="7.9" r="1.2" fill="{a}"/>'),
+        "x": f'<g {line}><path d="M5 4.5l14 15M19 4.5l-14 15"/></g>',
+        "huggingface": (f'<g {line}><circle cx="12" cy="12" r="9"/>'
+                        f'<path d="M8 14c1 2 2.4 3 4 3s3-1 4-3"/></g>'
+                        f'<circle cx="9" cy="9.8" r="1.2" fill="{a}"/>'
+                        f'<circle cx="15" cy="9.8" r="1.2" fill="{a}"/>'),
+        "nav-work": f'<g {line}><rect x="3" y="4" width="18" height="13" rx="2.5"/>'
+                    f'<path d="M8 21h8M12 17v4"/></g>',
+        "nav-stack": f'<g {line}><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></g>',
+        "nav-stats": f'<g {line}><path d="M5 20v-8M12 20V5M19 20v-5"/></g>',
+    }
+    return shapes[key]
+
+
+def mix(c1, c2, t):
+    a = [int(c1[i:i + 2], 16) for i in (1, 3, 5)]
+    b = [int(c2[i:i + 2], 16) for i in (1, 3, 5)]
+    return "#" + "".join(f"{round(x * t + y * (1 - t)):02x}" for x, y in zip(a, b))
+
+
+def badge(key):
+    label, sub, a = BADGES[key]
+    p = dict(P_STATS, edge=mix(a, P_STATS["bg"], 0.45))
+    W, H = 74 + max(int(len(label) * 8.6), int(len(sub) * 6.6), 40) + 44, 52
+    body = (f'<rect x="8" y="8" width="36" height="36" rx="11" fill="{a}" fill-opacity="0.12" '
+            f'stroke="{a}" stroke-opacity="0.4"/>'
+            f'<g transform="translate(14,14)">{glyph(key, a)}</g>'
+            f'<text x="56" y="25" font-size="15" font-weight="700" fill="{p["ink"]}">'
+            f'{escape(label)}</text>'
+            f'<text x="56" y="41" font-size="11.5" fill="{p["mute"]}">{escape(sub)}</text>')
+    for i, (lo, hi) in enumerate([(8, 20), (14, 28), (6, 16)]):
+        cx = W - 34 + i * 8
+        common = f'dur="{1.3 + i * 0.35:.2f}s" begin="-{i * 0.4:.1f}s" repeatCount="indefinite"'
+        body += (f'<rect x="{cx}" y="{26 - lo / 2}" width="4" height="{lo}" rx="2" '
+                 f'fill="{a}" opacity="{0.55 + i * 0.2:.2f}">'
+                 f'<animate attributeName="height" values="{lo};{hi};{lo}" {common}/>'
+                 f'<animate attributeName="y" values="{26 - lo / 2};{26 - hi / 2};{26 - lo / 2}" '
+                 f'{common}/></rect>')
+    return svg(W, H, body, f"{label}: {sub}", p)
+
+
 def write(name, content):
     path = OUT / name
     if not path.exists() or path.read_text(encoding="utf-8") != content:
@@ -629,6 +691,8 @@ def main():
     act = activity()
     langs = language_shares(owned)
     write("header.svg", header())
+    for key in BADGES:
+        write(f"badge-{key}.svg", badge(key))
     write("divider.svg", divider())
     write("stats.svg", stats(owned, act, langs))
     write("languages.svg", languages_donut(langs))
