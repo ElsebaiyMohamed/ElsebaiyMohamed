@@ -3,8 +3,16 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/sebaie-mohammed/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://huggingface.co/seba3y"><img src="https://img.shields.io/badge/Hugging%20Face-FF9D00?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face"></a>
+  <a href="#-featured-work"><img src="assets/badge-nav-work.svg" height="52" alt="Work"></a>
+  <a href="#-core-stack"><img src="assets/badge-nav-stack.svg" height="52" alt="Stack"></a>
+  <a href="#-github-in-numbers"><img src="assets/badge-nav-stats.svg" height="52" alt="Stats"></a>
+</p>
+
+<p align="center">
+  <a href="mailto:sebaiy.mohamed.edu@gmail.com"><img src="assets/badge-gmail.svg" height="52" alt="Email me"></a>
+  <a href="https://www.linkedin.com/in/sebaie-mohammed/"><img src="assets/badge-linkedin.svg" height="52" alt="LinkedIn"></a>
+  <a href="https://x.com/sebaeymohamed1"><img src="assets/badge-x.svg" height="52" alt="X"></a>
+  <a href="https://huggingface.co/seba3y"><img src="assets/badge-huggingface.svg" height="52" alt="Hugging Face"></a>
 </p>
 
 <img src="assets/divider.svg" width="100%" alt="">
@@ -38,6 +46,7 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 | [**FluentAI**](https://github.com/ElsebaiyMohamed/FluentAI) | Pronunciation, fluency, and content scoring (**88% accuracy**) | Wav2Vec2, CTC forced alignment, FastAPI |
 | [**MiniRag_26**](https://github.com/ElsebaiyMohamed/MiniRag_26) | Production-style RAG backend | FastAPI, PgVector, Celery, Docker Compose, Prometheus/Grafana |
 | [**BnSR**](https://github.com/ElsebaiyMohamed/BnSR) | Out-of-distribution Bengali speech recognition (Kaggle) | Wav2Vec2-CTC, SpeechT5, LoRA/PEFT |
+| **Speak Lab** | English speaking practice with streak tracking | Gradio, Hugging Face Spaces |
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -114,11 +123,21 @@ I'm an AI/NLP engineer with ~4 years of experience building speech and language 
 <img src="assets/divider.svg" width="100%" alt="">
 
 <details>
-<summary><b>📄 Publications</b></summary>
+<summary><b>📄 Publications, 🏆 competitions, and 🐛 open-source</b></summary>
 <br>
 
 **Publications**
 
-- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. [doi-10.1186/s44398-025-00006-5](https://doi.org/10.1186/s44398-025-00006-5)
+- *Springer, BMC Artificial Intelligence* (2025), co-authored with Dr. Amal. <!-- add paper title + DOI link -->
+- A second paper is under review in a Q1/Q2 journal.
+
+**Competitions**
+
+- Top 18/100, Arabic Summarization Challenge (ROUGE-L 19.2)
+- [Bengali.AI Speech Recognition](https://github.com/ElsebaiyMohamed/BnSR) (Kaggle, out-of-distribution ASR): WER 0.89
+
+**Open-source**
+
+- Issue filed: [huggingface/transformers#28002](https://github.com/huggingface/transformers/issues/28002)
 
 </details>
