@@ -9,11 +9,12 @@ import hashlib
 import json
 import math
 import os
+import re
 import sys
 import textwrap
 import urllib.request
 from datetime import date, datetime, timedelta, timezone
-from html import escape
+from html import escape, unescape
 from pathlib import Path
 
 USER = os.environ.get("GH_USER", "ElsebaiyMohamed")
@@ -639,6 +640,15 @@ def glyph(key, a):
                     f'<path d="M8 21h8M12 17v4"/></g>',
         "nav-stack": f'<g {line}><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></g>',
         "nav-stats": f'<g {line}><path d="M5 20v-8M12 20V5M19 20v-5"/></g>',
+        "rank-tier": (f'<g {line}><circle cx="12" cy="9" r="6"/>'
+                      f'<path d="M8.5 14.2L7 21l5-2.5 5 2.5-1.5-6.8"/></g>'),
+        "rank-global": (f'<g {line}><circle cx="12" cy="12" r="9"/><path d="M3 12h18'
+                        f'M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></g>'),
+        "rank-egypt": (f'<g {line}><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/>'
+                       f'<circle cx="12" cy="10" r="2.5"/></g>'),
+        "rank-month": f'<g {line}><path d="M4 16l6-6 4 4 6-7M15 7h5v5"/></g>',
+        "rank-stars": (f'<g {line}><polygon points="12,3 14.6,8.8 21,9.5 16.2,13.8 17.6,20 '
+                       f'12,16.8 6.4,20 7.8,13.8 3,9.5 9.4,8.8"/></g>'),
     }
     return shapes[key]
 
@@ -650,7 +660,10 @@ def mix(c1, c2, t):
 
 
 def badge(key):
-    label, sub, a = BADGES[key]
+    return pill(key, *BADGES[key])
+
+
+def pill(key, label, sub, a):
     p = dict(P_STATS, edge=mix(a, P_STATS["bg"], 0.45))
     W, H = 74 + max(int(len(label) * 8.6), int(len(sub) * 6.6), 40) + 44, 52
     body = (f'<rect x="8" y="8" width="36" height="36" rx="11" fill="{a}" fill-opacity="0.12" '
@@ -668,6 +681,85 @@ def badge(key):
                  f'<animate attributeName="y" values="{26 - lo / 2};{26 - hi / 2};{26 - lo / 2}" '
                  f'{common}/></rect>')
     return svg(W, H, body, f"{label}: {sub}", p)
+
+
+# ------------------------------------------------------------------ GitRanks
+COUNTRY = os.environ.get("GR_COUNTRY", "Egypt")
+GR_URL = f"https://gitranks.com/profile/{USER}"
+# Snapshot of the live pages (Nov 2026); used until the first successful scrape.
+GR_DEFAULTS = {
+    "tier": "Expert 2",
+    "stars_climb": "↑51,575",
+    "py_global": {"rank": "241,299", "top": "30", "change": "↑17,732"},
+    "py_egypt": {"rank": "351", "top": "20", "change": "↑38"},
+}
+
+
+def _text(url):
+    req = urllib.request.Request(url, headers={"User-Agent": f"profile-cards ({USER})"})
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        html = resp.read().decode("utf-8", "replace")
+    html = re.sub(r"<(script|style)\b.*?</\1>", " ", html, flags=re.S)
+    return re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", " ", html)))
+
+
+def _language(text, lang="Python"):
+    m = re.search(rf"{lang}\s+[A-Z][a-z]+ \d", text)
+    if not m:
+        return None
+    block = text[m.start():m.start() + 600]
+    pos = re.search(r"Position:\s*#([\d,]+)", block)
+    top = re.search(r"Top\s+(\d+)%", block)
+    chg = re.search(r"This month change:\s*([↑↓])\s*([\d,]+)", block)
+    if not (pos and chg):
+        return None
+    return {"rank": pos.group(1), "top": top.group(1) if top else None,
+            "change": chg.group(1) + chg.group(2)}
+
+
+def _scrape():
+    out = {}
+    overview = _text(GR_URL)
+    tier = re.search(r"Global [Rr]ank\s+([A-Z][a-z]+ \d)", overview)
+    stars = re.search(r"Stars\s+Rank\s+worldwide:\s*#[\d,]+\s*([↑↓])\s*([\d,]+)", overview)
+    if tier:
+        out["tier"] = tier.group(1)
+    if stars:
+        out["stars_climb"] = stars.group(1) + stars.group(2)
+    for key, url in (("py_global", GR_URL + "/languages"),
+                     ("py_egypt", GR_URL + "/languages/country")):
+        parsed = _language(_text(url))
+        if parsed:
+            out[key] = parsed
+    return out
+
+
+def gitranks():
+    """Last good values -> defaults; refreshed from the public profile pages.
+    Any failure keeps the previous numbers instead of breaking the run."""
+    cache = OUT / "gitranks.json"
+    data = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else GR_DEFAULTS
+    try:
+        data = {**data, **_scrape()}
+        write("gitranks.json", json.dumps(data, ensure_ascii=False, indent=1) + "\n")
+    except Exception as err:  # network, layout change, blocked bot...
+        print(f"gitranks scrape skipped: {err}", file=sys.stderr)
+    return data
+
+
+def rank_badges(d):
+    g, e = d["py_global"], d["py_egypt"]
+
+    def top(x):
+        return f" · top {x['top']}%" if x.get("top") else ""
+
+    return {
+        "rank-tier": (d["tier"], "GitRanks global tier", "#F5B85A"),
+        "rank-global": (f"#{g['rank']}", f"Python worldwide{top(g)}", "#A78BFA"),
+        "rank-egypt": (f"#{e['rank']}", f"Python in {COUNTRY}{top(e)}", "#5FD4B0"),
+        "rank-month": (g["change"], f"Python this month · {COUNTRY} {e['change']}", "#FF7FA8"),
+        "rank-stars": (d["stars_climb"], "Stars rank this month", "#5B9DFF"),
+    }
 
 
 def write(name, content):
@@ -693,6 +785,8 @@ def main():
     write("header.svg", header())
     for key in BADGES:
         write(f"badge-{key}.svg", badge(key))
+    for key, args in rank_badges(gitranks()).items():
+        write(f"badge-{key}.svg", pill(key, *args))
     write("divider.svg", divider())
     write("stats.svg", stats(owned, act, langs))
     write("languages.svg", languages_donut(langs))
