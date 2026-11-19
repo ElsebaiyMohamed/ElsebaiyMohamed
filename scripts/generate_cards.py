@@ -649,6 +649,7 @@ def glyph(key, a):
         "rank-stars-now": (f'<g {line}><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4v1a3 3 0 0 0 4 2.8'
                            f'M16 6h4v1a3 3 0 0 1-4 2.8M12 13v4M8 20h8M10 17h4"/></g>'),
         "rank-py-tier": f'<g {line}><path d="M5 10l7-5 7 5M5 15l7-5 7 5M5 20l7-5 7 5"/></g>',
+        "rank-egypt-month": f'<g {line}><path d="M4 16l6-6 4 4 6-7M15 7h5v5"/></g>',
         "rank-month": f'<g {line}><path d="M4 16l6-6 4 4 6-7M15 7h5v5"/></g>',
         "rank-stars": (f'<g {line}><polygon points="12,3 14.6,8.8 21,9.5 16.2,13.8 17.6,20 '
                        f'12,16.8 6.4,20 7.8,13.8 3,9.5 9.4,8.8"/></g>'),
@@ -668,7 +669,7 @@ def badge(key):
 
 def pill(key, label, sub, a):
     p = dict(P_STATS, edge=mix(a, P_STATS["bg"], 0.45))
-    W, H = 74 + max(int(len(label) * 8.6), int(len(sub) * 6.6), 40) + 44, 52
+    W, H = 232, 52  # one size for every badge so rows line up
     body = (f'<rect x="8" y="8" width="36" height="36" rx="11" fill="{a}" fill-opacity="0.12" '
             f'stroke="{a}" stroke-opacity="0.4"/>'
             f'<g transform="translate(14,14)">{glyph(key, a)}</g>'
@@ -764,12 +765,13 @@ def rank_badges(d):
 
     return {
         "rank-tier": (d["tier"], "GitRanks global tier", "#F5B85A"),
+        "rank-py-tier": (g["tier"], f"Python · {COUNTRY} {e['tier']}", "#4FD1E0"),
+        "rank-global": (f"#{g['rank']}", f"Python global{top(g)}".replace(" ·", ","), "#A78BFA"),
+        "rank-egypt": (f"#{e['rank']}", f"Python {COUNTRY}{top(e)}".replace(" ·", ","), "#5FD4B0"),
         "rank-stars-now": (f"#{d['stars_rank']}", "Stars rank worldwide", "#F4606F"),
-        "rank-py-tier": (g["tier"], f"Python tier · {COUNTRY}: {e['tier']}", "#4FD1E0"),
-        "rank-global": (f"#{g['rank']}", f"Python worldwide{top(g)}", "#A78BFA"),
-        "rank-egypt": (f"#{e['rank']}", f"Python in {COUNTRY}{top(e)}", "#5FD4B0"),
-        "rank-month": (g["change"], f"Python this month · {COUNTRY} {e['change']}", "#FF7FA8"),
         "rank-stars": (d["stars_climb"], "Stars rank this month", "#5B9DFF"),
+        "rank-month": (g["change"], "Python this month", "#FF7FA8"),
+        "rank-egypt-month": (e["change"], f"Python {COUNTRY} this month", "#7ED9A6"),
     }
 
 
