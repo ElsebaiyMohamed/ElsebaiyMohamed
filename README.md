@@ -1,21 +1,4 @@
-<p align="center">
-  <img src="assets/header.svg" width="100%" alt="ElSebaiy Mohammed, AI/NLP Engineer">
-</p>
-
-<p align="center">
-  <a href="#-featured-work"><img src="assets/badge-nav-work.svg" height="52" alt="Work"></a>
-  <a href="#-core-stack"><img src="assets/badge-nav-stack.svg" height="52" alt="Stack"></a>
-  <a href="#-github-in-numbers"><img src="assets/badge-nav-stats.svg" height="52" alt="Stats"></a>
-</p>
-
-<p align="center">
-  <a href="mailto:sebaiy.mohamed.edu@gmail.com"><img src="assets/badge-gmail.svg" height="52" alt="Email me"></a>
-  <a href="https://www.linkedin.com/in/sebaie-mohammed/"><img src="assets/badge-linkedin.svg" height="52" alt="LinkedIn"></a>
-  <a href="https://x.com/sebaeymohamed1"><img src="assets/badge-x.svg" height="52" alt="X"></a>
-  <a href="https://huggingface.co/seba3y"><img src="assets/badge-huggingface.svg" height="52" alt="Hugging Face"></a>
-</p>
-
-<img src="assets/divider.svg" width="100%" alt="">
+<p align="center"> <img src="assets/header.svg" width="100%" alt="ElSebaiy Mohammed, AI/NLP Engineer"> </p> <p align="center"> <a href="https://gitranks.com/profile/ElsebaiyMohamed"><img src="assets/badge-rank-tier.svg" height="52" alt="GitRanks global tier"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/ranks"><img src="assets/badge-rank-stars-now.svg" height="52" alt="Stars rank, worldwide"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/languages"><img src="assets/badge-rank-py-tier.svg" height="52" alt="Python tier"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/languages"><img src="assets/badge-rank-global.svg" height="52" alt="Python rank, worldwide"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/languages/country"><img src="assets/badge-rank-egypt.svg" height="52" alt="Python rank in Egypt"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/languages"><img src="assets/badge-rank-month.svg" height="52" alt="Python rank change this month"></a> <a href="https://gitranks.com/profile/ElsebaiyMohamed/ranks"><img src="assets/badge-rank-stars.svg" height="52" alt="Stars rank change this month"></a> </p> <p align="center"><sub>Ranks from <a href="https://gitranks.com/profile/ElsebaiyMohamed">GitRanks</a>, refreshed daily</sub></p> <p align="center"> <a href="#-featured-work"><img src="assets/badge-nav-work.svg" height="52" alt="Work"></a> <a href="#-core-stack"><img src="assets/badge-nav-stack.svg" height="52" alt="Stack"></a> <a href="#-github-in-numbers"><img src="assets/badge-nav-stats.svg" height="52" alt="Stats"></a> </p> <p align="center"> <a href="mailto:YOUR_EMAIL@gmail.com"><img src="assets/badge-gmail.svg" height="52" alt="Email me"></a> <a href="https://www.linkedin.com/in/sebaie-mohammed/"><img src="assets/badge-linkedin.svg" height="52" alt="LinkedIn"></a> <a href="https://x.com/YOUR_X_HANDLE"><img src="assets/badge-x.svg" height="52" alt="X"></a> <a href="https://huggingface.co/seba3y"><img src="assets/badge-huggingface.svg" height="52" alt="Hugging Face"></a> </p> <img src="assets/divider.svg" width="100%" alt="">
 
 ## 🎯 What I do
 
