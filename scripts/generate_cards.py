@@ -646,6 +646,9 @@ def glyph(key, a):
                         f'M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/></g>'),
         "rank-egypt": (f'<g {line}><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/>'
                        f'<circle cx="12" cy="10" r="2.5"/></g>'),
+        "rank-stars-now": (f'<g {line}><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H4v1a3 3 0 0 0 4 2.8'
+                           f'M16 6h4v1a3 3 0 0 1-4 2.8M12 13v4M8 20h8M10 17h4"/></g>'),
+        "rank-py-tier": f'<g {line}><path d="M5 10l7-5 7 5M5 15l7-5 7 5M5 20l7-5 7 5"/></g>',
         "rank-month": f'<g {line}><path d="M4 16l6-6 4 4 6-7M15 7h5v5"/></g>',
         "rank-stars": (f'<g {line}><polygon points="12,3 14.6,8.8 21,9.5 16.2,13.8 17.6,20 '
                        f'12,16.8 6.4,20 7.8,13.8 3,9.5 9.4,8.8"/></g>'),
@@ -689,9 +692,10 @@ GR_URL = f"https://gitranks.com/profile/{USER}"
 # Snapshot of the live pages (Nov 2026); used until the first successful scrape.
 GR_DEFAULTS = {
     "tier": "Expert 2",
+    "stars_rank": "887,563",
     "stars_climb": "↑51,575",
-    "py_global": {"rank": "241,299", "top": "30", "change": "↑17,732"},
-    "py_egypt": {"rank": "351", "top": "20", "change": "↑38"},
+    "py_global": {"tier": "Skilled 5", "rank": "241,299", "top": "30", "change": "↑17,732"},
+    "py_egypt": {"tier": "Pro 5", "rank": "351", "top": "20", "change": "↑38"},
 }
 
 
@@ -704,7 +708,7 @@ def _text(url):
 
 
 def _language(text, lang="Python"):
-    m = re.search(rf"{lang}\s+[A-Z][a-z]+ \d", text)
+    m = re.search(rf"{lang}\s+([A-Z][a-z]+ \d)", text)
     if not m:
         return None
     block = text[m.start():m.start() + 600]
@@ -713,7 +717,7 @@ def _language(text, lang="Python"):
     chg = re.search(r"This month change:\s*([↑↓])\s*([\d,]+)", block)
     if not (pos and chg):
         return None
-    return {"rank": pos.group(1), "top": top.group(1) if top else None,
+    return {"tier": m.group(1), "rank": pos.group(1), "top": top.group(1) if top else None,
             "change": chg.group(1) + chg.group(2)}
 
 
@@ -721,11 +725,12 @@ def _scrape():
     out = {}
     overview = _text(GR_URL)
     tier = re.search(r"Global [Rr]ank\s+([A-Z][a-z]+ \d)", overview)
-    stars = re.search(r"Stars\s+Rank\s+worldwide:\s*#[\d,]+\s*([↑↓])\s*([\d,]+)", overview)
+    stars = re.search(r"Stars\s+Rank\s+worldwide:\s*#([\d,]+)\s*([↑↓])\s*([\d,]+)", overview)
     if tier:
         out["tier"] = tier.group(1)
     if stars:
-        out["stars_climb"] = stars.group(1) + stars.group(2)
+        out["stars_rank"] = stars.group(1)
+        out["stars_climb"] = stars.group(2) + stars.group(3)
     for key, url in (("py_global", GR_URL + "/languages"),
                      ("py_egypt", GR_URL + "/languages/country")):
         parsed = _language(_text(url))
@@ -738,9 +743,13 @@ def gitranks():
     """Last good values -> defaults; refreshed from the public profile pages.
     Any failure keeps the previous numbers instead of breaking the run."""
     cache = OUT / "gitranks.json"
-    data = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else GR_DEFAULTS
+    data = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
+    data = {**GR_DEFAULTS, **data}
     try:
-        data = {**data, **_scrape()}
+        merged = {**GR_DEFAULTS, **data}
+        for key, val in _scrape().items():
+            merged[key] = {**merged.get(key, {}), **val} if isinstance(val, dict) else val
+        data = merged
         write("gitranks.json", json.dumps(data, ensure_ascii=False, indent=1) + "\n")
     except Exception as err:  # network, layout change, blocked bot...
         print(f"gitranks scrape skipped: {err}", file=sys.stderr)
@@ -755,6 +764,8 @@ def rank_badges(d):
 
     return {
         "rank-tier": (d["tier"], "GitRanks global tier", "#F5B85A"),
+        "rank-stars-now": (f"#{d['stars_rank']}", "Stars rank worldwide", "#F4606F"),
+        "rank-py-tier": (g["tier"], f"Python tier · {COUNTRY}: {e['tier']}", "#4FD1E0"),
         "rank-global": (f"#{g['rank']}", f"Python worldwide{top(g)}", "#A78BFA"),
         "rank-egypt": (f"#{e['rank']}", f"Python in {COUNTRY}{top(e)}", "#5FD4B0"),
         "rank-month": (g["change"], f"Python this month · {COUNTRY} {e['change']}", "#FF7FA8"),
